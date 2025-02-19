@@ -93,7 +93,7 @@ def load_model(model_path, vocab_size=10000, embedding_dim=100, num_classes=2):
     return model
   
 model = load_model('textcnn.pt')
-vocabulary = torch.load('vocab.pth')
+vocabulary = torch.load('vocabulary.pth')
 
 def inference(sentence, vocabulary, model):
     sentence = preprocess_text(sentence)
